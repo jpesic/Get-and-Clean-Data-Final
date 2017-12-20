@@ -1,0 +1,119 @@
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals captured in time domain. Total of 30 subjects ("subject" column) were monitored during following motion activities ("activity" column): "walking", "walking upstairs", "walking downstaris", "sitting", "standing", "laying".
+
+
+These time domain signals were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. The acceleration signal was then separated into body and gravity acceleration signals (body.acceleration.mean.xyz(time) and gravity.acceleration.mean.x(time)) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (body.acceleration.jerk.mean.xyz(time) and body.angular.jerk.mean.xyz(time)). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (the values are stored in ".magnitude" variables. 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing:
+
+
+                           "body.acceleration.mean.xyz(FFT)",
+                           "body.acceleration.std.xyz(FFT)",
+                           "body.acceleration.jerk.mean.xyz(FFT)",
+                           "body.acceleration.jerk.std.xyz(FFT)",
+                           "body.angular.velocity.mean.xyz(FFT)",
+                           "body.angular.velocity.std.xyz(FFT)",
+                           "body.acceleration.magnitude.mean(FFT)",
+                           "body.acceleration.magnitude.std(FFT)",
+     
+                           "body.acceleration.jerk.magnitude.mean(FFT)",
+                           "body.acceleration.jerk.magnitude.std(FFT)",
+                           
+                           "body.angular.velocity.magnitude.mean(FFT)",
+                           "body.angular.velocity.magnitude.std(FFT)",
+                           
+                           "body.angular.jerk.magnitude.mean(FFT)",
+                           "body.angular.jerk.magnitude.std(FFT)",
+
+
+
+The set of variables that were estimated from these signals are: 
+
+"subject",
+                           "activity.labels",
+                           "body.acceleration.mean.x(time)",
+                           "body.acceleration.mean.y(time)",
+                           "body.acceleration.mean.z(time)",
+                           "body.acceleration.std.x(time)",
+                           "body.acceleration.std.y(time)",
+                           "body.acceleration.std.z(time)",
+                           
+                           "gravity.acceleration.mean.x(time)",
+                           "gravity.acceleration.mean.y(time)",
+                           "gravity.acceleration.mean.z(time)",
+                           "gravity.acceleration.std.x(time)",
+                           "gravity.acceleration.std.y(time)",
+                           "gravity.acceleration.std.z(time)",
+                           
+                           "body.acceleration.jerk.mean.x(time)",
+                           "body.acceleration.jerk.mean.y(time)",
+                           "body.acceleration.jerk.mean.z(time)",
+                           "body.acceleration.jerk.std.x(time)",
+                           "body.acceleration.jerk.std.y(time)",
+                           "body.acceleration.jerk.std.z(time)",
+                           
+                           "body.angular.velocity.mean.x(time)",
+                           "body.angular.velocity.mean.y(time)",
+                           "body.angular.velocity.mean.z(time)",
+                           "body.angular.velocity.std.x(time)",
+                           "body.angular.velocity.std.y(time)",
+                           "body.angular.velocity.std.z(time)",
+                           
+                           "body.angular.jerk.mean.x(time)",
+                           "body.angular.jerk.mean.y(time)",
+                           "body.angular.jerk.mean.z(time)",
+                           "body.angular.jerk.std.x(time)",
+                           "body.angular.jerk.std.y(time)",
+                           "body.angular.jerk.std.z(time)",
+
+                           "body.acceleration.magnitude.mean(time)",
+                           "body.acceleration.magnitude.std(time)",
+                           
+                           "gravity.acceleration.magnitude.mean(time)",
+                           "gravity.acceleration.magnitude.std(time)",
+                           
+                           "body.acceleration.jerk.magnitude.mean(time)",
+                           "body.acceleration.jerk.magnitude.std(time)",
+                           
+                           "body.angular.velocity.magnitude.mean(time)",
+                           "body.angular.velocity.magnitude.std(time)",
+                           
+                           "body.angular.jerk.magnitude.mean(time)",
+                           "body.angular.jerk.magnitude.std(time)",
+                           
+                           "body.acceleration.mean.x(FFT)",
+                           "body.acceleration.mean.y(FFT)",
+                           "body.acceleration.mean.z(FFT)",
+                           "body.acceleration.std.x(FFT)",
+                           "body.acceleration.std.y(FFT)",
+                           "body.acceleration.std.z(FFT)",
+                           "body.acceleration.jerk.mean.x(FFT)",
+                           "body.acceleration.jerk.mean.y(FFT)",
+                           "body.acceleration.jerk.mean.z(FFT)",
+                           "body.acceleration.jerk.std.x(FFT)",
+                           "body.acceleration.jerk.std.y(FFT)",
+                           "body.acceleration.jerk.std.z(FFT)",
+                           
+                           "body.angular.velocity.mean.x(FFT)",
+                           "body.angular.velocity.mean.y(FFT)",
+                           "body.angular.velocity.mean.z(FFT)",
+                           "body.angular.velocity.std.x(FFT)",
+                           "body.angular.velocity.std.y(FFT)",
+                           "body.angular.velocity.std.z(FFT)",
+                           
+                           "body.acceleration.magnitude.mean(FFT)",
+                           "body.acceleration.magnitude.std(FFT)",
+                           
+                           "body.acceleration.jerk.magnitude.mean(FFT)",
+                           "body.acceleration.jerk.magnitude.std(FFT)",
+                           
+                           "body.angular.velocity.magnitude.mean(FFT)",
+                           "body.angular.velocity.magnitude.std(FFT)",
+                           
+                           "body.angular.jerk.magnitude.mean(FFT)",
+                           "body.angular.jerk.magnitude.std(FFT)",
+
